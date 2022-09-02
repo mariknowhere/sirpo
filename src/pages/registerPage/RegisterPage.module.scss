@@ -1,0 +1,146 @@
+@import "src/styles/colors";
+
+.register {
+  background: #F1F3FF;
+  position: relative;
+  height: 100vh;
+
+  &-header {
+    display: flex;
+    background: white;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 320px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 24px rgba(0, 0, 0, 0.08);
+
+    &-logo {
+      height: fit-content;
+      margin-right: 165px;
+      cursor: pointer;
+    }
+
+    &-links {
+      display: flex;
+      flex-direction: row;
+      margin-right: 134px;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1D1929;
+
+      &:not(:last-child) {
+        margin-right: 84px;
+      }
+    }
+
+    &-image {
+      margin-left: 4px;
+    }
+
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-button {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 9px 40px;
+      border: 0;
+      border-radius: 6px;
+      background: #2478F8;
+      color: white;
+
+      &:first-child {
+        padding: 9px 12px;
+        color: #2478F8;
+        background: white;
+        border: 1px solid #B3C5FF;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &-content {
+
+    &-block {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 800px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-title {
+      font-size: 38px;
+      line-height: 130%;
+      text-align: center;
+      margin-bottom: 22px;
+      color: #0D2242;
+    }
+
+    &-description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #1D1929;
+      margin-bottom: 22px;
+    }
+
+    &-button {
+      width: fit-content;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: white;
+      padding: 10px 40px;
+      border: 0;
+      background: linear-gradient(0deg, #166BEC 0%, #5398FF 100%), #2478F8;
+      border-radius: 6px;
+
+      &-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-card {
+      margin-right: 8px;
+    }
+
+    &-text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color: #2478F8;
+    }
+
+    &-divider {
+      display: flex;
+      width: 1px;
+      height: 20px;
+      background: #2478F8;
+      margin: 0 20px 0 15px;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@import "src/styles/colors";
+
+.menu {
+  &-content {
+    display: flex;
+    flex-direction: column;
+    width: 376px;
+    height: 100%;
+    background-color: white;
+    float: right;
+    padding: 24px;
+
+    &-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 30px;
+      color: $geekblue-10;
+      margin-bottom: 24px;
+    }
+
+    &-input {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      border: 1px solid #D9D9D9;
+      border-radius: 4px;
+      padding: 5px 12px;
+
+      &-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $geekblue-10;
+      }
+
+      &-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        &-last {
+          flex-grow: 1;
+        }
+      }
+
+      &-arrow {
+        position: absolute;
+        top: 32px;
+        right: 13px;
+      }
+
+      &-last {
+        pointer-events: none;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-button-save {
+      cursor: pointer;
+      padding: 7px 20px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: white;
+      border: 0;
+      background: linear-gradient(0deg, #166BEC 0%, #5398FF 100%), #2478F8;
+      border-radius: 4px;
+      margin-right: 16px;
+    }
+
+    &-button-cancel {
+      cursor: pointer;
+      padding: 7px 20px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: $blue;
+      border: 1px solid $blue;
+      border-radius: 4px;
+    }
+
+    &-card {
+      display: flex;
+      flex-direction: column;
+      padding: 8px 20px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+      margin-top: 4px;
+
+      &-item {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+
+        &-checkbox {
+          width: 16px;
+        }
+
+        &-label {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          color: $geekblue-10;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}

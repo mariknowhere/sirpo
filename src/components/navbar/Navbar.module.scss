@@ -1,0 +1,37 @@
+@import "src/styles/colors";
+
+.navbar {
+  padding: 12px 100px;
+  display: flex;
+  background: white;
+  flex-direction: row;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 24px rgba(0, 0, 0, 0.08);
+
+  &-item {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: $gray-6;
+
+    &:first-child {
+      font-weight: 600;
+      color: $blue;
+
+      &::before {
+        background: $blue;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        bottom: -12px;
+        width: 100%;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+}

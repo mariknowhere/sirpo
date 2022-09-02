@@ -1,0 +1,59 @@
+@import "src/styles/colors";
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: .5px solid $gray-4;
+
+  &-head {
+    width: 100%;
+    border-bottom: .5px solid $gray-4;
+
+    &-item {
+      position: relative;
+      width: 50%;
+      padding: 8px;
+      background: $gray-2;
+
+      &:not(:last-child) {
+        border-right: .5px solid $gray-4;
+      }
+
+      &-title {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: $geekblue-10;
+        float: left;
+      }
+    }
+  }
+
+  &-body {
+    border-bottom: .5px solid $gray-4;
+
+    &-row {
+      border-bottom: .5px solid $gray-4;
+      background: white;
+    }
+
+    &-data {
+      padding: 8px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: $geekblue-10;
+
+      &:not(:last-child) {
+        border-right: .5px solid $gray-4;
+      }
+
+      &-checkbox {
+        padding: 8px;
+      }
+    }
+  }
+}

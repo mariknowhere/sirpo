@@ -1,0 +1,39 @@
+@import "src/styles/colors";
+
+.header {
+  padding: 7px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  background: $blue;
+
+  &-start {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-end {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-logo {
+    height: fit-content;
+    margin-top: 2px;
+  }
+
+  &-divider {
+    width: 1px;
+    margin: 0 10px;
+    background: white;
+  }
+
+  &-text {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    color: white;
+  }
+}

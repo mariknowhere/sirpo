@@ -1,0 +1,89 @@
+@import "src/styles/colors";
+
+.menu {
+  &-content {
+    display: flex;
+    flex-direction: column;
+    width: 376px;
+    height: 100%;
+    background-color: white;
+    float: right;
+    padding: 24px;
+
+    &-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 30px;
+      color: $geekblue-10;
+      margin-bottom: 24px;
+    }
+
+    &-input {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      border: 1px solid #D9D9D9;
+      border-radius: 4px;
+      padding: 5px 12px;
+
+      &-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $geekblue-10;
+      }
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-comment {
+      height: 140px;
+      padding: 5px 12px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      resize: none;
+      border: 1px solid #D9D9D9;
+      border-radius: 4px;
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-button-save {
+      cursor: pointer;
+      padding: 7px 20px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: white;
+      border: 0;
+      background: linear-gradient(0deg, #166BEC 0%, #5398FF 100%), #2478F8;
+      border-radius: 4px;
+      margin-right: 16px;
+    }
+
+    &-button-cancel {
+      cursor: pointer;
+      padding: 7px 20px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      color: $blue;
+      border: 1px solid $blue;
+      border-radius: 4px;
+    }
+  }
+}

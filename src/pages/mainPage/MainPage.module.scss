@@ -1,0 +1,409 @@
+@import 'src/styles/colors';
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #E5E5E5;
+  height: 100vh;
+  padding: 24px 100px 32px;
+
+  &-popup {
+    position: absolute;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    border: .5px solid $gray-3;
+    border-radius: 6px;
+    background: $gray-2;
+    padding: 8px 0;
+
+    &-text {
+      padding: 8px 20px;
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      color: $geekblue-10;
+
+      &:first-child {
+        font-weight: 500;
+        color: $blue;
+      }
+    }
+
+    &-orders {
+      left: 190px;
+    }
+
+    &-products {
+      left: 270px;
+    }
+
+    &-statistics {
+      left: 350px;
+    }
+  }
+
+  &-tables {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  &-left-panel {
+    background: white;
+    width: 50%;
+    padding: 24px 24px 20px;
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      font-size: 18px;
+      line-height: 30px;
+      color: $geekblue-10;
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $gray-6;
+      height: 38px;
+    }
+
+    &-link {
+      position: relative;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      color: $gray-6;
+
+      &:last-child {
+        font-weight: 600;
+        color: $blue;
+
+        &::before {
+          background: $blue;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 0;
+          position: absolute;
+          bottom: -9px;
+          width: 100%;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+
+    &-row {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 11px;
+
+      &:last-child {
+        margin-bottom: 13px;
+      }
+    }
+
+    &-count {
+      display: flex;
+      justify-content: flex-end;
+      width: 10%;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      color: $gray-6;
+      margin-right: 11px;
+    }
+
+    &-divider {
+      width: 100%;
+      border-bottom: 1px solid $gray-4;
+    }
+
+    &-bottom {
+      margin-left: 75px;
+    }
+
+    &-date {
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 400;
+      color: $gray-6;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  &-right-panel {
+    padding: 24px 24px 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+
+    &-title {
+      font-size: 18px;
+      line-height: 30px;
+      color: $geekblue-10;
+      margin-bottom: 20px;
+
+      &-blue {
+        margin-left: 4px;
+        color: $blue;
+      }
+    }
+
+    &-table {
+      display: flex;
+      border: .5px solid $gray-4;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    &-category {
+      display: flex;
+      flex-direction: row;
+
+      &-value {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 8px;
+        width: 25%;
+        background: $gray-2;
+
+        &:not(:last-child) {
+          border-right: .5px solid $gray-4;
+        }
+
+        &:last-child {
+          justify-content: flex-end;
+        }
+      }
+
+      &-text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: $geekblue-10;
+      }
+
+      &-image {
+
+      }
+    }
+
+    &-rows {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-column {
+      padding: 8px;
+      width: 25%;
+      display: flex;
+      font-size: 14px;
+      line-height: 22px;
+      color: $geekblue-10;
+      border-bottom: .5px solid $gray-4;
+
+      &:last-child {
+        justify-content: flex-end;
+      }
+
+      &:not(:last-child) {
+        border-right: .5px solid $gray-4;
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-share {
+      display: flex;
+      flex-direction: row;
+
+      &-text {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        color: $geekblue-4;
+        margin-right: 4px;
+      }
+    }
+
+    &-additional {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-total {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      color: $gray-6;
+      margin-right: 8px;
+    }
+
+    &-number {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      color: $gray-7;
+      margin: 0 8px;
+
+      &-blue {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        padding: 0 8px;
+        color: $blue;
+        border: 1px solid $blue;
+        border-radius: 2px;
+      }
+    }
+
+    &-arrow {
+
+    }
+
+    &-dats {
+
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  &-item {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    background: white;
+    padding: 24px;
+
+    &-title {
+      font-size: 18px;
+      line-height: 30px;
+      color: $geekblue-10;
+      margin-bottom: 4px;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: row;
+
+      &-image {
+        height: fit-content;
+        margin-right: 12px;
+      }
+
+      &-date {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $gray-6;
+        margin-bottom: 2px;
+      }
+
+      &-price {
+        font-size: 18px;
+        line-height: 30px;
+        color: $geekblue-10;
+      }
+    }
+
+    &-divider {
+      width: 1px;
+      height: 100%;
+      background: $gray-5;
+      margin: 0 40px;
+    }
+
+    &-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-title {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $geekblue-10;
+        margin-right: 20px;
+      }
+
+      &-price {
+        font-size: 16px;
+        line-height: 24px;
+        color: $geekblue-10;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &:last-child {
+      width: 32%;
+      position: relative;
+    }
+
+    &:first-child {
+      width: 30%;
+    }
+
+    &-background {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    &-document-title {
+      font-size: 18px;
+      line-height: 30px;
+      color: $geekblue-10;
+      margin-bottom: 64px;
+    }
+
+    &-start {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+}
